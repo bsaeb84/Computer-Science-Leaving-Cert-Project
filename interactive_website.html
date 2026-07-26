@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <title>Computer Science Project 2025</title>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Stroke Prediction and Information</h1>
+    <br>
+    <p>Welcome to my website! This is an interactive website designed for those who are concerned about their health, in particular with their heart and their chances of suffering from a stroke. 
+        Please note that this website is designed to give purely important and relative information about the risks of suffering from a stroke. 
+        This website also provides general recommendations based on these questions that you will answer from backed-up sources and the information provided below from our dataset of over 5000 
+        participants who offered to give their information and experiences during their life.
+    </p>
+    <br>
+    <p>Stroke is the 2nd leading cause of death globally and is responsible for approximately 11% of total deaths, according the World Health Organisation (WHO). 
+        There are many reasons why one unfortunately suffers from a stroke, however, we have been able to gather information on the key factors that contribute to one's chances of getting a stroke. 
+        These factors include: gender, age, hypertension (i.e. high blood pressure), heart disease, average glucose levels, and BMI index.</p>
+    <br>
+    <p> Note: All information submitted by the user via answering the questions below will be saved for research and analytical reasons for us to be able to provide you with important information. For further queries
+    about your health please visit your GP or a specialist since this website can only provide so much and it is best to consult a professional. This website is only designed to inform you of risks of suffering from
+    a stroke and give you general advice in order to better your health and decrease your chances of getting a stroke.
+    </p>
+    <br>
+    <br>
+    <h2> Analysis of the dataset</h2>
+    <p>We used statistical analysis to derive thought-provoking conclusions about the relationship between one's health and their chances of suffering from a stroke.</p>
+    <h3>Mean, Mode, Median and Range of participant's age, average glucose levels, and BMI Index in the dataset</h3>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Variables</th>
+                <th scope="col">Mean</th>
+                <th scope="col">Median</th>
+                <th scope="col">Mode</th>
+                <th scope="col">Range</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Age</th>
+                <th>42.868810</th>
+                <th>44</th>
+                <th>57</th>
+                <th>81.92</th>
+            </tr>
+            <tr>
+                <th scope="row">Average Glucose Level</th>
+                <th>105.297402</th>
+                <th>91.68</th>
+                <th>93.88</th>
+                <th>216.62</th>
+            </tr>
+            <tr>
+                <th scope="row">BMI Index</th>
+                <th>28.894560</th>
+                <th>28.10</th>
+                <th>28.70</th>
+                <th>87.30</th>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <p>From the table above there can be seen that most of the participant are above 40 years of age, which is expected since those who would worry the most<br>
+        for their health are ones above 40 years of age.</p>
+    <br>
+    <p>The average glucose levels at a healthy amount for the mean, mode, and median which is between 70 and 100.<br>
+        However the mean does go over slightly but nothing too serious but may suggest that most glucose levels tend to be on the higher side.</p>
+    <br>
+    <p>The BMI Index for mean, mode, and median are pretty much the same at 28 suggesting that it can be modelled normal curve.<br>
+        The BMI Indexes are also on the higher side with the mean being on the verge of unhealthy side (Health Range: 18-29),<br>
+        which suggests that most of the participant were on the overweight category.</p>
+    <p>
+        The pie chart below shows the number of participents who suffered from a stroke and whether or not they suffer from hypertension (high blood pressure).
+    </p>
+    <p> As you can see, there is a clear correlation between whether or not the participants suffered from hypertension and whether or not they had a stroke. 
+        The number of people who suffer from hypertension and had a stroke is much higher than those who do not suffer from hypertension and had a stroke.</p>
+    <iframe src="hypertension_vs_stroke_pie_chart.html" width="1000" height="600" style="border:none;"></iframe> 
+    <br>
+    <br>
+    <p>The pie chart below shows the number of participents who suffered from a stroke and whether or not they suffer from any sort of heart disease.</p>
+    <p>The same goes for heart disease. 
+        There is a clear correlation between whether or not the participants suffered from any heart disease and whether or not they had a stroke. 
+        The number of people who suffer from heart disease and have had a stroke is much higher compared to those who do not suffer from heart disease and have had a stroke.
+    </p>
+    <iframe src="heart_disease_vs_stroke_pie_chart.html" width="1000" height="600" style="border:none;"></iframe>
+    <br>
+    <p>The scatter plot below shows the correlation between BMI index and Average Glucose Levels of patients who suffered from a stroke.</p>
+    <p>There is little connection between the BMI index and the Average Glucose Level of a patient who suffered from a stroke, however, there is a slight positive slope in the trend line between these two variables.<br> 
+        This indicates that there is some connection between the two, and the graph shows how high BMI index and high Average Glucose Levels are a common trend between those who suffered from a stroke.</p>
+    <iframe src="avg_glucose_bmi_scatter_plot.html" width="1000" height="600" style="border:none;"></iframe>
+    <br>
+    <p>The histogram below shows the age of participants who had suffered from a stroke.<br>
+        There can be seen a slight increase in stroke cases among those who are older, suggesting that stroke cases increase with the increase in age.</p>
+    <iframe src="age_vs_stroke_histogram.html" width="1000" height="600" style="border:none;"></iframe>
+    <br>
+    <p>The bar chart below shows the smoking status of the participants and how many people did and did not suffer from a stroke in each category.</p>
+    <br>
+    <iframe src="smoking_status_bar_chart.html" width="1000" height="600" style="border:none;"></iframe>
+    <br>
+    <p>General observations:</p>
+    <ul>
+        <li>
+            In the 'Unknown' category, out of 1483 people in total, 29 people suffered from a stroke (~2%).
+        </li>
+        <br>
+        <li>In the 'formerly smoked' category, out of 836 people in total, 57 people suffered from a stroke (~7%).</li>
+        <br>
+        <li>In the 'never smoked' category, out of 1852 people in total, 84 people suffered from a stroke (~4.5%).</li>
+        <br>
+        <li>In the 'smokes' category, out of 737 people in total, 39 people suffered from a stroke (~5.3%).</li>
+    </ul>
+    <br>
+    <p>In general, there is not much of a difference in percentages between the four categories, however, 
+        the graph does suggest that those who have formerly smoked and those who do smoke are at a higher risk of suffering from a stroke.</p>
+    <br>
+    <h3>Recommendations webpage</h3>
+    <p>If you would like any recommendations that we have for those who are concerned for their health and their risk of suffering from a stroke,<br>
+    click the link below to find more information about such matters if it applies to you.</p>
+    <br>
+    <a href="recommendations_page.html">Recommendations page for those who need further information.</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2>Help us collect more!</h2>
+    <p>The following questions is for us to collect more information and data about strokes and prediction to help us predict more accurately someone's chances<br>
+    of suffering from a stroke and what measures we must take to lessen the chances of such a horrible end that had caused millions<br>
+    of lives.</p>
+    <h3>Questions</h3>
+    <form id="healthForm">
+        <div>
+            <label for="ageIn">How old are you?</label>
+            <input type="text" id="ageIn" name="age" value="" placeholder="e.g 14">
+            <span id="age-error" class="error-message"></span>
+        </div>
+            <br>
+        <div>
+            <label for="gender">What is your gender?</label>
+            <select name="gender" required>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="hypertension">Have you ever suffered from hypertension?</label>
+            <select name="hypertension">
+                <option value=1>Yes</option>
+                <option value=0>No</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="heart_disease">Do you have sort of heart disease?</label>
+            <select name="heart_disease">
+                <option value=1>Yes</option>
+                <option value=0>No</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="avg_glucose_level">what is your average glucose level?</label>
+            <input type="text" id="avg_glucose_level" name="avg_glucose_level" value="" placeholder="e.g 124">
+            <span id="avg_glucose_level-error" class="error-message"></span>
+        </div>
+        <br>
+        <div>
+            <label for="bmi">What is your BMI index?</label>
+            <input type="text" id="bmi" name="bmi" value="" placeholder="e.g 19">
+            <span id="bmi-error" class="error-message"></span>
+        </div>
+        <br>
+        <div>
+            <label for="stroke">Have you ever suffered from a stroke?</label>
+            <select name="stroke">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <div>
+            <input type="submit">
+        </div>
+        <br>
+        <br>
+        <div>
+            <input type="reset">
+        </div>
+        <br>
+        <br>
+        <div id="messageContainer"></div>
+        <br>
+        <div id="tableContainer"></div>
+    </form>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('healthForm');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const fd = new FormData(form);
+            const obj = Object.fromEntries(fd);
+
+            // variables
+            const age = parseInt(obj.age);  // converting to number data type
+            const gender = obj.gender;  
+            const hypertension = obj.hypertension === "1";  // converting to boolean data type
+            const heart_disease = obj.heart_disease == "1"; // converting to boolean data type
+            const avg_glucose_level = parseInt(obj.avg_glucose_level);  // converting to number data type 
+            const bmi = parseInt(obj.bmi);  // converting to number data type
+            const stroke = obj.stroke === "1"; // converting to boolean data type
+
+            // checking for data enteries
+            console.log("Age:", age);
+            console.log("Gender:", gender);
+            console.log("Hypertension:", hypertension);
+            console.log("Heart Disease:", heart_disease);
+            console.log("Average Glucose Level:", avg_glucose_level);
+            console.log("BMI Index:", bmi);
+            console.log("Suffered from Stroke?:", stroke);
+
+            // checking for data types
+            console.log(typeof age);
+            console.log(typeof gender);
+            console.log(typeof hypertension);
+            console.log(typeof heart_disease);
+            console.log(typeof avg_glucose_level);
+            console.log(typeof bmi);
+            console.log(typeof stroke);
+
+            //Error variables
+            const ageErr = document.getElementById("age-error");
+            const avg_glucose_levelErr = document.getElementById("avg_glucose_level-error");
+            const bmiErr = document.getElementById("bmi-error");
+
+            //setting the error message to display nothing
+            ageErr.textContent = "";
+            avg_glucose_levelErr.textContent = "";
+            bmiErr.textContent = "";
+
+            // checking for validation of data entered and correct data type
+            let isValid = true;
+
+            // if age input is empty or not an interger message for error of age will show up and the 'age' object is removed if invalid
+            if (age === "" || !Number.isInteger(age)) {
+                ageErr.textContent = "Please enter your age properly.";
+                isValid = false;
+                delete obj.age;
+            }
+            
+            // if avg_glucose_level input is empty or not an interger message for error of avg_glucose_level will show up and the 'avg_glucose_level' object is removed if invalid
+            if (avg_glucose_level === "" || !Number.isInteger(avg_glucose_level)) {
+                avg_glucose_levelErr.textContent = "Please enter your average glucose levels properly.";
+                isValid = false;
+                delete obj.avg_glucose_level
+            }
+
+            // if bmi input is empty or not an interger message for error of bmi will show up and the 'bmi' object is removed if invalid
+            if (bmi === "" || !Number.isInteger(bmi)) {
+                bmiErr.textContent = "Please enter your BMI index properly.";
+                isValid = false;
+                delete obj.bmi;
+            }
+
+            // Save everything regardless of age, avg_glucose_level, and bmi validity
+            const json = JSON.stringify(obj);
+
+            // Save JSON to localStorage
+            localStorage.setItem('form', json);
+            console.log("Data saves:", obj);
+
+            // Output of message mentioning the table below
+            const messageContainer = document.getElementById('messageContainer');
+            if (messageContainer) {
+                messageContainer.innerHTML = '<p>The information that you have entered is shown in the table below.</p>'}
+            
+            // Create a table dynamically as an output
+            const tableContainer = document.getElementById('tableContainer');
+            if (tableContainer) {
+            // Clear previous table content
+            tableContainer.innerHTML = '';
+
+            // Create table elements
+            const table = document.createElement('table');
+            const thead = document.createElement('thead');
+            const tbody = document.createElement('tbody');
+
+            // Styling the table
+            table.style.border = '1px solid black';
+            table.style.borderCollapse = 'collapse';
+            table.style.marginTop = '20px';
+            table.style.marginLeft = '20px';
+            table.style.width = '80%';
+
+            // Add table header
+            const headerRow = document.createElement('tr');
+            const headers = ['Age', 'Gender', 'Hypertension', 'Heart Disease', 'Average Glucose Level', 'BMI', 'Stroke Status'];
+            headers.forEach(header => {
+                const th = document.createElement('th');
+                th.textContent = header;
+                th.style.border = '1px solid black';
+                th.style.padding = '8px';
+                th.style.backgroundColor = '#783a07';
+                th.style.color = '#fcf7f2';
+                headerRow.appendChild(th);
+            });
+            thead.appendChild(headerRow);
+            table.appendChild(thead);
+
+            // Add table body
+            const dataRow = document.createElement('tr');
+            const data = [age, gender, hypertension, heart_disease, avg_glucose_level, bmi, stroke];
+            data.forEach(value => {
+                const td = document.createElement('td');
+                td.textContent = value;
+                td.style.border = '1px solid black';
+                td.style.padding = '8px';
+                dataRow.appendChild(td);
+            });
+            tbody.appendChild(dataRow);
+            table.appendChild(tbody);
+
+            // Append table to container
+            tableContainer.appendChild(table);
+        } else {
+            console.error('Table container not found.');
+        } 
+
+            // Create a blob with the JSON data and trigger a download
+            const blob = new Blob([json], {type: 'application/json'});
+            const jsonObjectUrl = URL.createObjectURL(blob);
+            const filename = "user_enters.json";
+            const anchorEL = document.createElement("a");
+            anchorEL.href = jsonObjectUrl;
+            anchorEL.download = 'form_data.json';
+            anchorEL.click();
+            URL.revokeObjectURL(jsonObjectUrl);
+        });
+    });
+      </script>
+</body>
+</html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang = "en" >
+<head>
+	<meta charset="UTF-8">
+   <title>Coursework Project</title> 
+   <meta  name="Coursework Project 2025" content= "This is my coursework project">
+</head>
+<style>
+   body {
+      background-color: linen;
+   }
+
+	h1 { font-family:Georgia, 'Times New Roman', Times, serif;
+      margin-left:20px ;
+	   font-size: 60px;
+	   color: #3e0b61;
+	}
+	
+	h2 { font-family:Georgia, 'Times New Roman', Times, serif;
+	font-size: 30px;
+   margin-left: 20px;
+	color:#a5036c;
+	}
+	
+	h3 { font-family:Georgia, 'Times New Roman', Times, serif;
+      margin-left: 20px;
+	   font-size: 20px;
+	   color:#db3a7d;
+	}
+
+   p {
+      color:black;
+      margin-left: 20px;
+      font-size: 20px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+   ul {
+      margin-left: 20px;
+      font-size: 20px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+   table {
+      border: 1px solid black;
+      border-collapse: collapse;
+      margin-top: 20px;
+      margin-left: 20px;
+      width: 80%;
+   }
+   thead {
+      background-color: #ebe9e4;
+   }
+   tbody {
+      background-color: white;
+   }
+   th {
+      border: 1px solid black;
+      padding: 8px;
+   }
+   tr {
+      border: 1px solid black;
+   }
+   a {
+      font-size: 20px;
+   }
+</style>
+<body>
+
+   <h1>  Coursework Project Computer Science 2025 </h1>
+   <br>
+   <h2> Meeting The Breif </h2>
+   <video width="1000" height="600" controls>
+      <source src="Meeting the Brief Video.mp4" type="video/mp4">
+   </video>
+   <br>
+   <div>
+      <h2> Investigate </h2>
+      <br>
+      <p>I started my investigation by looking at many different datasets. 
+         I used the websites listed for sources of datasets on the coursework brief.<br>
+         The website I found to be the easiest and most reliable to use for getting access to datasets was Kaggle. 
+         I looked at the datasets listed in the mind map below.</p>
+         <img src="MindMap.png" width="1000px">
+         <p>After searching different datasets centred around the topics listed above, I realised I preferred any datasets relating to or centred around healthcare.<br> 
+            Particularly, medicine and physical healthcare. I initially wanted to work on Energy consumption but realised there was not much for me to ask and recommend to the user based on the inputs they entered.<br>
+            I found the same problem to be true with the Energy Crisis and the Stock Market.</p>
+            <p>I went with the Stroke Prediction dataset:<br>
+            <ul>
+               <li>Why? It was a high-quality dataset with many records of 5000+, thoroughly explained fields, and contained relevant information that is incredibly important for today's society
+                  and my interests in healthcare and strokes.</li>
+               <br>
+               <li>I did not choose the drug administration and analysis dataset because the large amount of data within the topic was highly medical, and I had very little understanding of the dataset.
+                  <br>However, this was the dataset I was most interested in and intrigued by. I also did not choose Sleep Health and Lifestyle, Employee Satisfaction, and Student Mental Health for the same reasons.</li>
+               <br>
+               <li>I did not choose the fever or diabetes prediction dataset because when I checked for the quality of the datasets on Kaggle's scoring, it was lower compared to the others and had no license.<br> 
+                  I did not want to work with a dataset that lacked official approval or licensing and did not want to risk working with lower-quality data, so I cut them off my final decision.<br>
+                  I was not interested in them as much as the stroke prediction or drug administration and analysis datasets.</li>
+               <br>
+               <li> I searched for existing informative systems for examples of existing solutions and used the websites mentioned in the coursework brief.<br>
+                  I liked the Dublin school bikes website with its informative website with information and graphs to show their analysis and I liked the website I found on data.gov.ie<br> 
+                  showing the monthly exchequer tax receipts from 1984 to 2021 with their interactive bar charts and line graphs. So, I have decided to use a combination of the two websites to create my interactive information system.
+               </li>
+            </ul></p>
+   </div>
+   <br>
+   <div>
+      <h2> Plan and Design </h2>
+      <p>My project will be written in Python and JavaScript as they are the programming languages I know best.<br> 
+         These are the programming languages required. Python is referenced in the brief,and JavaScript makes the website interactive and dynamic.<br>
+         I will also use HTML to create an interactive website for users to navigate. My objectives are to make a working project that hits the below requirements:</p>
+         <h3>Meeting Basic Requirements</h3>
+         <ul>
+            <li>The final project will display my findings (analysis) from the stroke prediction data that I have cleaned through a basic interactive information system interface.<br>  
+               All of this will be done through Python and the libraries recommended by the coursework brief booklet.</li>
+            <br>
+            <li>I used Thonny for my Python codes and Visual Studio Code for the HTML and JavaScript.</li>
+         </ul>
+         <h3>Flowchart</h3>
+         <img src="Basic Requirement Flowchart.drawio.png" width="500px" height="800px">
+         <h3>Meeting Advanced Requirements</h3>
+         <ul>
+            <li>All these steps will be done using JavaScript. </li>
+            <br>
+            <li>Users can to navigate and interact with the data visualisations (hover to see details, click to filter data, zoom in, etc) on the interactive system.<br>
+               The website will have a section where the user can enter data,<br> which will be stored in the system as a data file. 
+               The data stored will be the user's gender, age, if they have hypertension, if they have heart disease, their smoking status,<br>
+               their average blood glucose levels, their BMI index, and if they have ever suffered from a stroke before.<br> 
+               The data will be validated (checking for errors) and stored in a JSON file. </li>
+               <br>
+               <li>The website will summarise and display the information entered by the user through the information system in a table format.</li>
+               <br>
+               <li>There are three data types collected from the user: boolean, string, and integer.</li>
+               <br>
+               <li>The website will include recommendations to help inform users based on the stroke prediction dataset, which I have analysed.</li>
+         </ul>
+         <h3>Flowchart</h3>
+         <img src="advanced_requirements_flowchart.png" width="500px" height="1000px">
+   </div>
+   <br>
+   <div>
+
+      <h2> Create </h2>
+      <br>
+      <h3>Pseudocode explaining the code and algorithm I used:</h3>
+      <img src="Cleaning data psuedocode.png">
+      <img src="Analysing data psuedocode.png">
+      <img src="Javascript input data.png">
+      <h3> Week 1 </h3>
+      <ul>
+         <li>Looked over and analyzed my options</li>
+         <br>
+         <li>Decided to go with the stroke prediction dataset.</li>
+      </ul>
+      <h3> Week 2 </h3>
+      <ul>
+         <li>Searched ways on how to use Pandas library.</li>
+         <br>
+         <li>Downloaded and extracted the dataset using Pandas.</li>
+         <br>
+         <li>Searched for methods used to clean data</li>
+         <br>
+         <li>Looked for ways to use seaborn to find outliers but I found it to be<br>
+         of not much use.</li>
+      </ul>
+      <h3> Week 3 </h3>
+      <ul>
+         <li>Pandas wasn't in Thonny default packages so had to use system shell to download it.</li>
+         <br>
+         <li>Looking for ways to remove the data that does not match the rest of the data structure in 'age' column.</li>
+         <br>
+         <br>
+         <li>Decided to removed the record with decimal values from column 'age' using floor division to store a decimal values in a list and removing them from the dataset. 
+            There wasn't many records with decimal values as age so I decided to remove all together.
+         </li>
+      </ul>
+      <h3>Week 4</h3>
+      <ul>
+         <li>Removing records with 'Unknown' in 'smoking_status' column.</li>
+         <br>
+         <li>Removing columns 'id', 'ever_married', 'work_type', 'Residence_type' because I have no use for them.</li>
+         <br>
+         <li>Found the percentage of missing values in each column - 'bmi' column had ~3.9% missing values so I removed all.</li>
+         <br>
+         <li>One record in 'gender' column was 'Other' so I removed it to remove outliers.</li>
+         <br>
+         <li>Saved the cleaned dataset as a new CSV file.</li>
+         <br>
+         <li>Looking for ways on how to analyse the cleaned dataset - (finding the mean, mode, median, range, frequency, correlation if I have time.)</li>
+      </ul>
+      <h3>Week 5</h3>
+      <ul>
+         <li>Carried out basic statistical analysis (mean, mode, median, max, min) on the numeric columns (age, avg_glucose_level, bmi) and visualizing 
+            the percentages of 'Yes' and 'No' for columns (hypertension, stroke, heart_disease) and for the age column, showing the percentage of females to males (binomial distribution).</li>
+         <br>
+         <li>Decided to represent the numeric data as it is and mention my statistics on the top corner of the graphs (histogram) and represent the binomial distribution only (pie charts). 
+            Took inspiration from Kaggle's own way of representing the data.</li>
+      </ul>
+      <h3>Week 6</h3>
+      <ul>
+         <li>Decided to use plotly since it generates interactive graphs.</li>
+         <br>
+         <li>Used plotly to visualise gender distribution and 'Yes' and 'No' answers for hypertension.<li>
+         <br>
+         <li>Created questions for the interactive website. (I assumed the users knows their BMI and average glucose levels.) </li>
+      </ul>
+      <h3>Week 7</h3>
+      <ul>
+         <li>Decided to look back on my code on cleaning the dataset and ran the similar test I used for the 'gender' column to find the number of values in each category since I rushed the cleaning process.<br>
+            There are over 1000 values in the 'Unknown' category so I decided to do the cleaning process again without removing the 'Unknown categories again.</li>
+         <br>
+         <li>I did the analysis again, this time I found the mean, median, mode, and range of all numeric columns.<br>
+             I used a dictionary to store a key:value pairs to group the data and to use something other than lists and put them in dataframe format.</li>
+         <br>
+         <li>I copied and altered a function that creates histograms comparing each column with the stroke column, which is the primary column.<br>
+             I decided not to use it because the graphs did not give much information and I did not want to copy someone's code on the same dataset.</li>
+         <br>
+         <li>Isolated cases who suffered from a stroke and compared using groupby function in Pandas that finds the percentage of those from this category that either suffers or does not suffer 
+             from hypertension and heart disease and made individual pie charts on both hypertension and heart disease.<br>
+             I struggled with getting to understand groupby but I got it in the end.</li>
+         <br>
+         <li>Isolated cases that suffered from a stroke and created a scatter plot with a trend line showing correlation between the two columns.<br> 
+            It is a very low correlation but still noted. I got this idea from a website mentioning the strong relationship between glucose levels and BMI index.</li>
+         <br>
+         <li>I used the same data I used for the scatter plot and made a bar chart of age distributions of people who had a stroke.<br>
+             - not much of a relationship, the numbers in stroke cases do increase as the ages increase.</li>
+         <br>
+         <li>Created the HTML layout of my website to get things started. - headings, questions, and basic HTML code for a website.<br>
+             I tried using python Flask I struggled with understanding how to work with the library and the graphs wouldn't show up at most times.<br>
+             I decided use HTML and JavaScript for my website. </li>
+      </ul>
+      <h3>Week 8</h3>
+      <ul>
+         <li> I struggled a lot with finding ways on how to embed my plotly graphs into by website but managed to add all my graphs into by website using write_html from Pandas library.</li>
+         <br>
+         <li>Created a form relating to stroke perdiction dataset. User enters age, gender, hypertension + heart_disease + stroke = Yes/No, avg_glucose_level, bmi.<br>
+             Took a while to understand forms.</li>
+         <br>
+         <li>age, avg_glucose_level, bmi are entered in a textbox and other are a select-option type. 
+      </ul>
+      <h3>Week 9</h3>
+      <ul>
+         <li>Converted hypertension, heart_disease, and stroke as a boolean, and another to convert age, avg_glucose_level, and bmi to integers.</li>
+         <br>
+         <li>Checked for each data type.</li>
+         <br>
+         <li>Wrote JavaScript code to output a table when the data was entered - I struggled heavily with this part of the code.</li>
+         <br>
+         <li>If I had time I would have made the website to give costume recommendations based off of the data inputed by the user.<br>
+             I decided to output the data in a table format and write general recommendations based off of the stroke prediction dataset I analysed.</li>
+      </ul>
+      <h3>Week 10</h3>
+      <ul>
+         <li>Wrote general recommendations from the analysed dataset on a different webpage and linked it to main wbepage.</li>
+         <br>
+         <li>Wrote JavaScript code that converted the saved entered data into a JSON file -<br>
+             I wanted to convert it into a CSV file for easier usage but I did not have enough time to write the code so I left it as a JSON file.</li>
+         <br>
+      </ul>
+      <h3>Week 11</h3>
+      <ul>
+         <li>Wrote CSS code for my website.</li>
+         <br>
+         <li>Wrote error messages 'age', 'bmi' and 'avg_glucose_level' and deleted invalid entery.</li>
+         <br>
+         <li>Wrote flowchart for basic and advanced requirements.</li>
+         <br>
+         <li>Wrote pseudocode and test table for Python and JavaScript codes.</li>
+      </ul>
+   <br>
+   <h2> Testing </h2>
+   <p>A overview of the unit testings that I did.</p>
+   <h3>Test Table: Cleaning the dataset</h3>
+
+   <table>
+      <thead>
+         <tr>
+            <th scope="col">Action</th>
+            <th scope="col">Input</th>
+            <th scope="col">Expected Outputs</th>
+            <th scope="col">Actual Outputs</th>
+            <th scope="col">Test Result</th>
+            <th scope="col">Test Data Used</th>
+            <th scope="col">Comments</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <th scope="row">Removing unnecessary columns</th>
+            <th>Columns 'id', 'ever_married', 'work_type', Residence_type'</th>
+            <th>Display all unnecessary columns removed</th>
+            <th>Displayed all unnecessary columns removed</th>
+            <th>Pass</th>
+            <th>Copy of the same dataset</th>
+            <th>For some reason all columns couldn't be removed all at once on by computer</th>
+         </tr>
+         <tr>
+            <th scope="row">Removing unwanted values</th>
+            <th>missing values in 'bmi', decimal values in 'age', 'Other' value in 'gender'</th>
+            <th>Display all unwanted values removed</th>
+            <th>Displayed all unwanted values removed</th>
+            <th>Pass</th>
+            <th>Copy of the same dataset</th>
+            <th>Used floor division to isolate decimal values</th>
+         </tr>
+         <tr>
+            <th scope="row">Save cleaned data as CSV file</th>
+            <th>Cleaned data</th>
+            <th>CSV file with cleaned dataset</th>
+            <th>CSV file with cleaned dataset</th>
+            <th>Pass</th>
+            <th>Cleaned dataset used in prior tests</th>
+            <th></th>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+   <h3>Test Table: Analysing the cleaned dataset</h3>
+
+   <table>
+      <thead>
+         <tr>
+            <th scope="col">Action</th>
+            <th scope="col">Input</th>
+            <th scope="col">Expected Outputs</th>
+            <th scope="col">Actual Outputs</th>
+            <th scope="col">Test Result</th>
+            <th scope="col">Test Data Used</th>
+            <th scope="col">Comments</th>
+         </tr> 
+      </thead>
+      <tbody>
+         <tr>
+            <th scope="row">Find the mean, mode, median, range of numeric columns and present in data frame structure</th>
+            <th>Column 'age', 'avg_glucose_level', 'bmi', from cleaned data</th>
+            <th>Mean, mode, median, range of numeric columns presented in data frame structure</th>
+            <th>Mean, mode, median, range of numeric columns presented in data frame structure</th>
+            <th>Pass</th>
+            <th>Copy of cleaned data from same dataset</th>
+            <th></th>
+         </tr>
+         <tr>
+            <th scope="row">Making a pie chart representing the proportion of people with and without hypertension that had a stroke</th>
+            <th>Isolated 'hypertension' column values with people who had a stroke, stroke percentage of sufferers and non-sufferers</th>
+            <th>Pie chart showing a percentage of people who had a stroke that did and did not have hypertension</th>
+            <th>Pie chart showing a percentage of people who had a stroke that did and did not have hypertension</th>
+            <th>Pass</th>
+            <th>Copy of cleaned data from same dataset</th>
+            <th>Showed a strong relationship between people who suffered from a stroke and those who had hypertension as expected.</th>
+         </tr>
+         <tr>
+            <th scope="row">Making a pie chart representing the proportion of people with and without heart disease that had a stroke</th>
+            <th>Isolated 'heart_disease' column values with people who had a stroke, stroke percentage of sufferers and non-sufferers</th>
+            <th>Pie chart showing a percentage of people who had a stroke that did and did not have heart disease</th>
+            <th>Pie chart showing a percentage of people who had a stroke that did and did not have heart disease</th>
+            <th>Pass</th>
+            <th>Copy of cleaned data from same dataset</th>
+            <th>Showed a strong relationship between people who suffered from a stroke and those who had heart disease as expected.</th>
+         </tr>
+         <tr>
+            <th scope="row">Making a histogram representing the age distribution of people who have had a stroke</th>
+            <th>'age', 'stroke'</th>
+            <th>Bar chart with age on x-axis and stroke counts on y-axis</th>
+            <th>Bar chart with age on x-axis and stroke counts on y-axis</th>
+            <th>Pass</th>
+            <th>Copy of cleaned data from the same dataset</th>
+            <th>Not much of a relationship. Stroke cases increase by a small amount as the ages increase, as expected</th>
+         </tr>
+         <tr>
+            <th scope="row">Making a scatter plot with a trend line of the people who had a stroke, showing the correlation between 'bmi' and 'avg_glucose_level'</th>
+            <th>'bmi', 'avg_glucose_level', 'data_stroke'</th>
+            <th>Scatter plot with 'bmi' on the x-axis 'avg_glucose_level' on the y-axis, and a trendline</th>
+            <th>Scatter plot with 'bmi' on the x-axis 'avg_glucose_level' on the y-axis, and a trendline</th>
+            <th>Pass</th>
+            <th>Copy of cleaned data from the same dataset</th>
+            <th>The relationship is not strong, but it shows a positive trendline.</th>
+         </tr>
+         <tr>
+            <th scope="row">Isolating 'smoking_status' and 'stroke' and renaming it as 'count' and 
+               making a bar chart showing the smoking status of people who had and had not had a stroke 
+               </th>
+            <th>'smoking_status', 'stroke', 'count'</th>
+            <th>Bar chart with smoking statuses on the x-axis and 'count' on the y-axis with different coloured blocks representing the stroke status</th>
+            <th>Bar chart with smoking statuses on the x-axis and 'count' on the y-axis with different coloured blocks representing the stroke status</th>
+            <th>Pass</th>
+            <th>Copy of cleaned data from the same dataset</th>
+            <th>Calculated the percentage of stroke to no stroke cases in each category and there wasn't much of a relationship but it did suggest that people who formerly smoked had the highest stroke cases</th>
+         </tr>
+      </tbody>
+   </table> 
+   <br>
+   
+   <h3>Test Table: Interactive information system</h3>
+   <table>
+      <thead>
+         <tr>
+            <th scope="col">Action</th>
+            <th scope="col">Input</th>
+            <th scope="col">Expected Outputs</th>
+            <th scope="col">Actual Outputs</th>
+            <th scope="col">Test Result</th>
+            <th scope="col">Test Data Used</th>
+            <th scope="col">Comments</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <th scope="row">Accepting inputed values</th>
+            <th>Accpeting any value for each input. Converting age, average glucose level, and BMI to number and hypertension and heart disease to boolean.</th>
+            <th>Table showing all the inputed values and instead of 'Yes' for hypertension and heart disease there would be 'true'</th>
+            <th>Table showing all the inputed values and instead of 'Yes' for hypertension and heart disease there was 'true'</th>
+            <th>Pass</th>
+            <th>age = 12, gender = Female, hypertension = Yes, heart disease = Yes, average glucose level = 124, smoking status = never smoked, bmi = 19</th>
+            <th>Puts NaN for columns age, average glucose level, and BMI since they are the only onces that are not choice</th>
+         </tr>
+         <tr>
+            <th scope="row">Saving the inputed data as a JSON file</th>
+            <th>Data entered</th>
+            <th>JSON file with the data entered</th>
+            <th>JSON file with the data entered</th>
+            <th>age = 12, gender = Female, hypertension = Yes, heart disease = Yes, average glucose level = 124, smoking status = never smoked, bmi = 19</th>
+            <th>The missing values or wrong data type entered are not visiable on the JSON file since they were deleted</th>
+            <th></th>
+         </tr>
+      </tbody>
+   </table>
+   </div>
+   <br>
+   <h2>Evaluate</h2>
+   <br>
+   <p>My initial design was for a website to take in inputted information from the user and give them recommendations based on their data and the added knowledge from the analysis I did on the dataset itself.<br>
+      I wanted it to also give broad recommendations based on the analysis that I had done and for the
+      data entered by the user to be saved as a JSON file and then converted to a CSV file because it is easier to use and navigate.<br>
+      However, I realised that my goals were too unrealistic and that I would have to make them simpler.<br>
+      I decided to output the entered data as a table, give broad recommendations to the user based on the dataset I analysed, and only save the entered data as a JSON file.</p>
+   <br>
+   <p>If I had more time, I would do more analysis on the dataset, find linear regression, connect each of the columns, and find more correlations between each column to see any further connections.<br>
+      I would also include the columns 'ever_married', 'work_type',and 'Residence_type' since I believe it would make for a higher quality analysis on predicting strokes that would be of use for<br>
+      a niche selection of people who have heart problems or have a family history with heart problems.</p>
+   <br>
+   <p>I would also include a BMI calculator on my website if I had more time to give a nicer user experience.</p>
+   <h2> Refrences </h2>
+   <br>
+   <ol>
+      <li><a href="ttps://irishcycle.com/dublinbikes/">Dublinbikes website inspiration</a></li>
+      <li><a href="https://respiratorydisease-hpscireland.hub.arcgis.com/pages/influenza">Influenza report inspiration website</a></li>
+      <li><a href="https://www2.hse.ie/services/urgent-emergency-care-report/">Interactive website emergancy care inspiration</a></li>
+      <li><a href="https://public.tableau.com/app/profile/tumasile.chilunga/viz/IrelandMonthlyExchequerTaxReceipts1984-Present/MONTHLYEXCHEQUERTAXRECEIPTS1984-Present_Story">Interactive graph website inspiration with exchaquer tax recipient form</a></li>
+      <li><a href="https://data.gov.ie/showcase/monthly-exchequer-tax-receipts-from-1984-to-march-2021">Main source exchaquer tax recipient form website</a></li>
+      <li><a href="https://www.geeksforgeeks.org/what-is-pseudocode-a-complete-tutorial/">How towrite psuedocode</a></li>
+      <li><a href="https://www.youtube.com/watch?v=Q13YfIFSGmk">How to write a psuedocode</a></li>
+      <li><a href="https://www.kaggle.com/datasets">Kaggle</a></li>
+      <li><a href="https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset">Dataset I chose for my project - stroke prediction dataset</a></li>
+      <li><a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/03_subset_data.html">Extracting files using Pandas</a></li>
+      <li><a href="https://www.datacamp.com/tutorial/pandas-read-csv">More on extracting data with Panadas</a></li>
+      <li><a href="https://careerfoundry.com/en/blog/data-analytics/how-to-find-outliers/">Looking for outliers</a></li>
+      <li><a href="https://medium.com/@arsalan_zafar/handling-outliers-in-pandas-5cd872eef508">types of ways to check for outliers</a></li>
+      <li><a href="https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure">looking at matplotlib</a></li>
+      <li><a href="https://seaborn.pydata.org/generated/seaborn.boxplot.html">Seaborn boxplot</a></li>
+      <li><a href="https://medium.com/@polanitzer/boxplot-in-python-understand-your-data-better-using-seaborn-library-7e73aa7c0454">More on seaborn boxplots</a></li>
+      <li><a href="https://www.geeksforgeeks.org/how-to-check-the-data-type-in-pandas-dataframe/">Finding the data types of each column</a></li>
+      <li><a href="https://blog.finxter.com/5-best-ways-to-convert-pandas-dataframe-columns-to-variables/#:~:text=Direct%20assignment%20is%20the%20simplest,by%20people%20new%20to%20pandas.">How to save a column into a variable</a></li>
+      <li><a href="https://www.codecademy.com/resources/docs/python/math-module/math-remainder">Using math module to find remainders</a></li>
+      <li><a href="https://www.freecodecamp.org/news/python-list-remove-how-to-remove-an-item-from-a-list-in-python/">How to remove values from a list</a></li>
+      <li><a href="https://realpython.com/python-modulo-operator/">How to use floor division</a></li>
+      <li><a href="https://www.geeksforgeeks.org/python-remove-all-values-from-a-list-present-in-other-list/">how remove items occurring in list from another list</a></li>
+      <li><a href="https://www.w3schools.com/python/pandas/ref_df_isin.asp">Checking for specific values in a database</a></li>
+      <li><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.isin.html">More on how to check for specific values in a database</a></li>
+      <li><a href="https://www.kaggle.com/code/danieldobrenz/stroke-eda-model-tuning-and-predictions">Where I got the idea to use isnull()</a></li>
+      <li><a href="https://www.w3schools.com/sql/func_sqlserver_isnull.asp">How to use isnull() in pandas</a></li> 
+      <li><a href="https://www.datacamp.com/tutorial/pandas-reset-index-tutorial">Resting the index to the default setting to be safe</a></li>
+      <li><a href="How to drop one or multiple columns in Pandas DataFrame - GeeksforGeeks">How to remove columns using Pandas</a></li>
+      <li><a href="https://www.youtube.com/watch?v=4UltKCnnnTA">Video on how to clean data</a></li>
+      <li><a href="Stroke - Causes and Risk Factors | NHLBI, NIH">Factos that affect the risks of getting a stroke</a></li>
+      <li><a href="https://www.kaggle.com/code/thunguyen87/healthcare-stroke">Inspiration for what to do</a></li>
+      <li><a href="How to drop one or multiple columns in Pandas DataFrame - GeeksforGeeks">How to remove columns</a></li>
+      <li><a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.value_counts.html">How to count values in individual columns</a></li>
+      <li><a href="https://www.geeksforgeeks.org/export-pandas-dataframe-to-a-csv-file/">How to save cleaned data to CSV file</a></li>
+      <li><a href="https://www.youtube.com/watch?v=3-s95QV2DFw">Video showing how to use dictionaries to make statistical analysis on data and how to use plotly pie charts, and bar charts</a></li>
+      <li><a href="https://stackabuse.s3.amazonaws.com/files/ebooks/data-visualization-in-python/data-visualization-in-python-preview.pdf">Ways to visualize grpahs on python</a></li>
+      <li><a href="https://plotly.com/python/pie-charts/#plot-chart-with-area-proportional-to-total-count">Plotly pie charts</a></li>
+      <li><a href="https://www.kaggle.com/code/chanchal24/stroke-prediction-using-python">Creating plotly pie charts</a></li>
+      <li><a href="https://www.youtube.com/watch?v=MSAFhbpOQag&t=304s">Plotly graphs into HTML file</a></li>
+      <li><a href="https://www.w3schools.com/tags/att_img_width.asp">Entering images into website</a></li>
+      <li><a href="https://plotly.com/python/histograms/">Histograms in plotly</a></li>
+      <li><a href="https://builtin.com/data-science/pandas-groupby">Comparing two columns using plotly</a></li>
+      <li><a href="https://plotly.com/python/linear-fits/">Scatter plot correlation</a></li>
+      <li><a href="ttps://www.kaggle.com/code/abdullahkse/stroke-data-eda">Ideas for comapring 2 columns and correlations</a></li>
+      <li><a href="https://www.geeksforgeeks.org/boolean-indexing-in-pandas/">Boolean indexing in Pandas</a></li>
+      <li><a href="https://www.youtube.com/watch?v=MSAFhbpOQag&t=178s">Plotly to HTML into website</a></li>
+      <li><a href="https://www.w3schools.com/css/css_howto.asp">Guide to CSS</a></li>
+      <li><a href="https://www.google.com/search?client=firefox-b-d&q=hex+color">Hex colours</a></li>
+      <li><a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_form_padding">Customizing input forms</a></li>
+      <li><a href="http://www.w3schools.com/CSS/tryit.asp?filename=trycss_form_button">Customizing buttons</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event">How to use DOMContentLoaded_event</a></li>
+      <li><a href="https://www.jameslmilner.com/posts/downloading-a-file-with-javascript/">How to download a JSON file from JavaScript</a></li>
+      <li><a href="https://www.w3schools.com/tags/att_input_type_reset.asp">Reset button</a></li>
+      <li><a href="https://www.youtube.com/watch?v=7LGpIQ6ceJs">JavaScript to save data entered by user and convert to JSON file</a></li>
+      <li><a href="https://www.youtube.com/watch?v=2O8pkybH6po">How to use forms in HTML</a></li>
+      <li><a href="https://www.youtube.com/watch?v=PgUXiprlg1k">If statements in JavaScript</a></li>
+      <li><a href="https://www.w3schools.com/tags/tag_select.asp">Select options in HTML</a></li>
+      <li><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table3">Creating tables in HTML</a></li>
+      <li><a href="https://www.freecodecamp.org/news/javascript-string-to-boolean/">Coverting string values to boolean in JavaScript</a></li>
+      <li><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_border_divider2">Table styles in CSS</a></li>
+      <li><a href="https://www.w3schools.com/html/html_table_styling.asp">More on table styling</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">Tables in HTML assigning elements</a></li>
+      <li><a href="https://www.geeksforgeeks.org/form-validation-using-javascript/">Validating data using JavaScript</a></li>
+      <li><a href="https://www.w3schools.com/js/js_comparisons.asp">JavaScript operators</a></li>
+      <li><a href="https://www.w3schools.com/html/html_links.asp">How to link webpages into a website in HTML</a></li>
+      <li><a href="https://www.w3schools.com/Css/tryit.asp?filename=trycss_table_hover">How to make the table hoverable</a></li>
+      <li><a href="https://www.w3schools.com/css/css_link.asp">Styling links</a></li>
+      <li><a href="https://www.w3schools.com/html/html5_video.asp">How to embed videos in HTML file</a></li>
+   </ol>
+   <h2> Summery Word Count</h2>
+   <table>
+      <thead>
+         <tr>
+            <th scope="col">Section</th>
+            <th scope="col">Word Count</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <th scope="row">1. Meeting the Brief</th>
+            <th></th>
+         </tr>
+         <tr>
+            <th scope="row">2. Investigation</th>
+            <th>396</th>
+         </tr>
+         <tr>
+         <th scope="row">3. Plan and Design</th>
+         <th>291</th>
+         </tr>
+         <tr>
+            <th scope="row">4. Create</th>
+            <th></th>
+         </tr>
+         <tr>
+            <th scope="row">5. Evaluation</th>
+            <th>233</th>
+         </tr>
+         <tr>
+            <th scope="row">Total:</th>
+            <th></th>
+         </tr>
+      </tbody>
+   </table>
+   <br>
+   
+  </body>
+
+</html>
+
